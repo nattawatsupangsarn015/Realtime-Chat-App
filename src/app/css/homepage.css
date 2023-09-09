@@ -1,0 +1,95 @@
+.home-page-backgroud {
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+  width: 100vw;
+  background-color: #ffffff;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-page-backgroud .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 75vh;
+  width: 50vw;
+  min-width: 700px;
+  min-height: 500px;
+  border: 3px solid #000000;
+  box-shadow: 0px 2px 10px 0px;
+  padding: 0rem 5rem;
+}
+
+.home-page-typing {
+  width: 600px;
+}
+
+.home-page-typing .content {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid #000000; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(40, end) infinite,
+    blink-caret 0.75s step-end infinite;
+  height: 30px;
+}
+
+.home-page-typing h1 {
+  font-size: 20px;
+}
+
+.home-page-typing span {
+  font-size: 14px;
+  color: #1d1c1cbd;
+}
+
+.home-page-session {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+}
+
+.home-page-session .session-box {
+  border: 1px solid #000000;
+  width: 10rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.home-page-session .session-box:hover {
+  background-color: #00000018;
+}
+
+/* The typing effect */
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  75% {
+    width: 100%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #000000;
+  }
+}
