@@ -7,6 +7,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
 
 .home-page-backgroud .box {
@@ -21,6 +24,7 @@
   border: 3px solid #000000;
   box-shadow: 0px 2px 10px 0px;
   padding: 0rem 5rem;
+  position: relative;
 }
 
 .home-page-typing {
@@ -53,6 +57,7 @@
   justify-content: space-between;
   margin-top: 10rem;
   margin-bottom: 5rem;
+  transition: 0.3s;
 }
 
 .home-page-session .session-box {
@@ -67,6 +72,60 @@
 }
 
 .home-page-session .session-box:hover {
+  background-color: #00000018;
+}
+
+.home-page-join-session {
+  position: absolute;
+  height: 55%;
+  width: 100%;
+  bottom: 0;
+  padding: 2rem 2rem 10rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: 0.3s;
+}
+
+.home-page-join-session .session-content {
+  font-size: 20px;
+}
+
+.home-page-join-session .session-box {
+  margin-top: 25px;
+  width: 10rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 20px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 13px;
+}
+
+.home-page-join-session .session-button-position {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 70%;
+}
+
+.home-page-join-session .session-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #000000;
+  width: 5.5rem;
+  height: 2rem;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+.home-page-join-session .session-button:hover {
   background-color: #00000018;
 }
 
